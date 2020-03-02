@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/banner.jpg);
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.header_text {
+    text-align: center;
+    margin-top: 50%;
+    transform: translate(0,-50%);
+  
+}
+.navbar a{ 
+    color: #FFC107 !important;
+}
+
+/* EXPERIENCE */
+
+.experience .item_experience {
+    width: 300px;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.3);
+}
+.experience .item_experience h3 {
+    font-size: 20px;
+}
+.experience .item_experience .icon_experience {
+    font-size: 35px;
+}
+
+/* SERVICES */
+
+.services {
+    background: #F5F5F5;
+}
+
+.services .item_service h2 {
+    font-size: 20px;
+
+}
+.services .item_service .service_icon{
+    font-size: 35px;
+}
+
+/* SOLUTION */
+
+.solution {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/solution.jpg);
+    text-align: center;
+}
+.solution .solution_text h2 {
+    font-size: 23px ;
+}
+
+/* TEAM */ 
+.team {
+    background-color: #F5F5F5;
+}
+
+/* FOOTER0 */
+.footer {
+    background: #2A2B2D;
+    color: white;
+}
+.footer form {
+    position: relative;
+}
+
+.footer h5 {
+    border-bottom: 1px solid #FFC107;
+    width: 100px;
+    border-width: 2px;
+}
+.footer .footer_title {
+    margin-top: 5px;
+    width: 85px;
+}
+
+.footer li span {
+    font-weight: bold;
+}
+
+.btn1 {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:1025px){
+    .header {
+        height: 800px;
+        position: relative;
+    }
+    .navbar a {
+        font-size: 25px;
+    }
+    .header_text{ 
+        position: absolute;
+        text-align: center;
+        color: blue;
+        margin-top: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .header_text h1 {
+        font-size: 80px;
+    }
+    .experience_flex {
+        display: flex;
+    }
+    .item_experience {
+        margin-right: 20px;
+    }
+    .service_box {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: center;
+    }
+    .item_service {
+        width: 40%;
+    }
+    
+    .solution {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .solution .solution_text h2 {
+        font-size: 40px;
+    }
+    .solution .solution_text p {
+        font-weight: lighter;
+    }
+    /* BLOG */
+    .text_blog {
+        position: relative;
+    }
+    .text_blog a {
+       position: absolute;
+       left: 0;
+    }
+
+    /* TEAM */
+   
+    .team .card_team .card {
+        width: 23.5% !important;
+        margin-right: 15px;
+    }
+    .team .card_team .card:last-child {
+        margin-right: 0;
+    }
+
+}
