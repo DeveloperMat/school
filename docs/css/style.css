@@ -6,7 +6,7 @@
 
 .header {
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/banner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/docs/img/banner.jpg);
     background-repeat: none;
     background-size: cover;
     display: flex;
@@ -55,7 +55,7 @@
 /* SOLUTION */
 
 .solution {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/solution.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/docs/img/solution.jpg);
     text-align: center;
 }
 .solution .solution_text h2 {
@@ -164,6 +164,11 @@
     }
     .team .card_team .card:last-child {
         margin-right: 0;
+    }
+    /* fOOTER */
+
+    .footer {
+        padding: 20px;
     }
 
 }
